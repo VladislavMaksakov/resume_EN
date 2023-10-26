@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html data-lang="uk">
+<html data-lang="ua">
 
 <head>
 	<meta charset="UTF-8">
-	<title>My resume</title>
+	<title>Моє резюме</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 	<div id="sidebar">
 		<div id="sidebar-content">
-			<img src="MyPhoto.jpg" alt="Ваше фото">
+			<img src="MyPhoto.jpg" alt="Ваше фото" id="profile-photo">
 			<h1>General information</h1>
 			<h3>Surname and name</h3>
 			<p>Maksakov Vladyslav</p>
@@ -31,35 +31,32 @@
 				<a href="https://www.facebook.com/vlad.maksakov.1" target="_blank"><img src="facebook-icon.png"></a>
 				<a href="https://github.com/VladislavMaksakov" target="_blank"><img src="github-icon.png"></a>
 			</div>
+			<a href="Maksakov_CV.pdf" download="Maksakov_CV.pdf" id="download-button">Download CV (PDF)</a>
 		</div>
 	</div>
 	<div id="main-content">
 		<div class="header">
 			<h1 class="page-title">Trainee/Junior Unity Developer</h1>
 			<div class="language">
-				<p>Language resume</p>
-				<img id="flag" src="uk.png" alt="Флаг Украины">
-				<ul id="language-dropdown" class="hidden">
-					<li>
-						<a href="https://vladislavmaksakov.github.io/resume_ua/">Українська </a>
-						<img src="ua.png" alt="Флаг Украины">
-					</li>
-					<li>
-						<a href="https://vladislavmaksakov.github.io/resume_EN/">English</a>
-						<img src="uk.png" alt="Флаг Украины">
-					</li>
-				</ul>
+				<div id="language-button">
+					<button id="language-toggle" onclick="openLink()">
+						<span>Version of the CV in Ukrainian language</span>
+						<img src="ua.png" alt="Флаг України">
+					</button>
+				</div>
 			</div>
 		</div>
 		<section id="experience">
 			<h2>About me</h2>
 			<p>
-				I am a young professional with an interest in the game development industry. My significant
-				experience in this field was my participation in the Game Jam competition, where I, together with a
-				team of three classmates, developed a game that was awarded the title 'The game that the judges will
-				play after the Game Jam'. This project allowed me to expand my knowledge of game development, as well
-				as develop teamwork, creative thinking, and problem-solving skills. I am passionate about the gaming
-				industry and want to continue developing in this field.
+				I am a young professional with an interest in the game development industry. My significant experience in
+				this
+				field was my participation in the Game Jam competition, where I, together with a team of three classmates,
+				developed a game that was awarded the title 'The game that the judges will play after the Game Jam'. This
+				project allowed me to expand my knowledge of game development, as well as develop teamwork, creative
+				thinking,
+				and problem-solving skills. I am passionate about the gaming industry and want to continue developing in
+				this field.
 			</p>
 		</section>
 		<section id="education">
@@ -70,7 +67,6 @@
 					<p>
 						121 "Software engineering" | Studying
 					</p>
-
 				</li>
 				<li>
 					<h3>Kharkiv Radio Engineering College</h3>
@@ -88,7 +84,6 @@
 		<section id="skills">
 			<h2>Skills</h2>
 			<ul>
-
 				<li>Git;</li>
 				<li>MySQL;</li>
 				<li>С# and Unity;</li>
@@ -112,29 +107,109 @@
 			<ul>
 				<li>
 					<h3>Course work</h3>
-					<p>2D platformer "RABBIT" (C#, Unity)
-						In this project all scripts are written in C#. I use 2d animation,
-						calling it inside the code, the main classes of the Unity API.</p>
+					<p>2D платформер “RABBIT” (С#, Unity)
+						2D platformer "RABBIT" (C#, Unity) 2D platformer "RABBIT" is my project developed using C# and
+						Unity. In this project, all scripts are written in C#, and 2D animation is used, which is called
+						inside the code, and the main classes of the Unity API. The main functionality of the game is to
+						move the main character, read input keys, change the direction of his movement, and detect collisions
+						with objects on the stage. In addition, the game has implemented the processing of button pressing
+						events,
+						which allows you to change the character's animation depending on his movements. The game also has
+						enemies
+						that the hero can encounter. The function of finding and destroying enemies is implemented, which
+						allows
+						the player to complete the level. It is also possible to obtain bonuses that affect the hero and
+						process
+						their effects. In addition, a life system has been implemented, which provides for the loss of the
+						hero's
+						life in case of collision with enemies or loss of life, as well as the ability to transfer data
+						between game
+						levels. All these features were written using C# and the Unity API, which allows us to create a decent
+						and
+						interesting 2D platformer "RABBIT".</p>
 					<p><a href="https://www.youtube.com/watch?v=D_x17JcBVQA" target="_blank">Video about this game</a></p>
 				</li>
 				<li>
 					<h3>The game was developed by the team during the Game Jam 2023 competition</h3>
-					<p>2D root crop simulator "Under Tree" (C#, Unity)
-						This project was developed by a team of four people, my personal task was UI
-						design, animation, and functionality of the bugs. As well as testing and creating bug reports.</p>
+					<p>2D root crops simulator "Under Tree" (C#, Unity) This project was developed by a
+						team of four peopleDuring the development of this project, I created a graphical interface of root
+						crops,
+						including the game menu and controls. The functionality of the bugs was also my task. I implemented
+						their
+						movement, and customized the interaction between the beetles and the root crops, adding the ability
+						for the
+						beetles to eat or damage them. In addition to development, I also performed test tasks. I tested
+						different
+						aspects of the game to make sure it worked properly. I created bug reports that we fixed later. In
+						general,
+						my work in the Under Tree project was focused on developing root crops, animating beetles, testing,
+						and creating
+						bug reports. This project was an interesting and challenging experience for me, some of the ideas and
+						functionality
+						I developed were new to me, which added a lot of challenges and opportunities to develop my skills.
+					</p>
 					<p><a href="https://www.youtube.com/watch?v=fuEohfdGcgQ" target="_blank">Video about this game</a></p>
 					<p><a href="https://ibb.co/jJ18n3b" target="_blank">Certificate received after the competition</a></p>
 				</li>
 				<li>
 					<h3>Diploma project</h3>
-					<p>3D Survival Game "Kill Or Die" (C#, Unity)
-						I developed this project for my diploma, I did it for about 3 months, I wrote
-						the music myself, I made several 3D models and textures, and used mesh-agent,
-						coroutines, raycast, Animation Events, OOP principles and design patterns in the code.</p>
+					<p>3D Survival Game «Kill Or Die» (С#, Unity)
+						3D Survival Game "Kill Or Die" (C#, Unity) During the development of the "Kill Or Die" project, I was
+						responsible
+						for creating the main music of the game, which I composed myself. I also developed several 3D models
+						and textures
+						for the game. In the project, I used various programming techniques such as mesh-agent for character
+						movement in the
+						game, coroutines for asynchronous execution of various tasks, raycast for detecting obstacles and
+						interacting with them,
+						Animation Events for synchronizing animations with game events. I also followed the principles of
+						object-oriented
+						programming in the code and used various design patterns to improve the structure and expand the
+						game's capabilities.
+						The whole project took about 3 months of development, and it became my graduation project. It was a
+						challenging, but at
+						the same time interesting and stimulating experience that allowed me to expand my knowledge and skills
+						in the field
+						of game development.</p>
 					<p><a href="https://youtu.be/Zgx8ORrX1XI" target="_blank">Video about this game</a></p>
+				</li>
+				<li>
+					<h3>Test application №1</h3>
+					<p>2D game "Hill Climb Racing" (C#, Unity)
+						I developed this project for a test assignment and spent about 6 hours on it.
+						With the help of basic knowledge, I realized the physical behavior of the car, its movement and
+						interaction with the road.
+						To provide realistic car control, I used the physics engine built into Unity
+						and created a keyboard-based control system. In addition, to add entertainment to the players, I
+						created
+						an achievement system. Overall, developing Hill Climb Racing was an interesting challenge and
+						increased my development and programming skills in the Unity environment.</p>
+					<p><a href="https://youtu.be/sP48XqU_9do" target="_blank">Video about this game</a></p>
+				</li>
+				<li>
+					<h3>Test application №2</h3>
+					<p>Application for file compression (C#)
+						I developed this project to compress text, media and audio files.
+						In the process of developing the application, I used the C# programming language and the Visual Studio
+						environment.
+						The project included creating a user interface where the user could select files to be compressed.
+						I also added buttons to save the compressed files.
+						To compress text files, I used the Huffman algorithm. This algorithm is based on the construction of
+						the optimal prefix code for text characters. After compression, smaller file sizes were obtained,
+						which allowed me to save disk space.
+						To compress audio and media files, I used NuGet packages such as "NAudio" and system
+						system libraries.
+						These packages provided functionality for processing audio and video data, including compression.</p>
+					<p><a href="https://github.com/VladislavMaksakov/CompressApp.git" target="_blank">Project repository</a>
+					</p>
 				</li>
 			</ul>
 		</section>
 	</div>
-	<script src="script.js"></script>
+	<script>
+		function openLink() {
+			var url = "https://vladislavmaksakov.github.io/resume_ua/";
+			window.open(url, "_blank");
+		}
+	</script>
 </body>
